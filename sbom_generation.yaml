@@ -14,6 +14,7 @@ steps:
     name: "Run Gradle cyclonedxBom command"
     command: |
       # For more details, visit https://github.com/CycloneDX/cyclonedx-gradle-plugin/blob/master/README.md
+      cd gdk/
       cat <<EOF >> init.gradle
         initscript {
           repositories {
@@ -39,6 +40,7 @@ steps:
         }
       EOF
       gradle --init-script init.gradle cyclonedxBom -info
+      cd ..
 outputArtifacts:
   - name: artifactSBOM
     type: BINARY
