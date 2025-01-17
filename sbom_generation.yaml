@@ -51,7 +51,6 @@ steps:
         }
       EOF
       gradle --init-script init.gradle cyclonedxBom -info
-      cd ..
 outputArtifacts:
   - name: artifactSBOM
     type: BINARY
