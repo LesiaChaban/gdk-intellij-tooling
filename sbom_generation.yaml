@@ -16,7 +16,7 @@ steps:
   - type: Command
     name: "Installing the Oracle GraalVM 21 for JDK 11"
     command: |
-      yum -y install graalvm21-ee-11-jdk
+      yum -y install graalvm21-ee-8-jdk
   - type: Command
     name: "Setting the JAVA_PATH"
     command: |
