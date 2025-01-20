@@ -51,6 +51,7 @@ steps:
         }
       EOF
       ./gradlew --init-script init.gradle cyclonedxBom -info
+      mv artifactSBOM.json ${OCI_PRIMARY_SOURCE_DIR}/artifactSBOM.json
       cd ..
 outputArtifacts:
   - name: artifactSBOM
