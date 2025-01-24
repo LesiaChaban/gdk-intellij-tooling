@@ -1,0 +1,4 @@
+rootProject.name = 'intellij-tooling'
+include 'gdk'
+​
+​
